@@ -1,8 +1,7 @@
 // var dataUrl= "data_dict.json"
-// var dataUrl= "https://drive.google.com/uc?id=1ls5kC1TuJPe_qTWEsFihmSTSs8netArB"
 // var dataUrl= "x1.json"
 // var dataUrl= "x.json"
-var dataUrl= "https://www.dropbox.com/s/3nlyb8rj20h3yf9/x.json?dl=0"
+var dataUrl= "https://raw.githubusercontent.com/yaocaptain/mj/main/data_dict.json"  // 公開 data_dict.json 65MB
 var d  // data_dict
 var id  // 用 hot_score 排序過的
 var loaded_count = 0;  // 定義一個變數，記錄已經載入的圖片數量
