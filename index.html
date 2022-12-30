@@ -1,0 +1,25 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>midjourney</title>
+    <link rel="stylesheet" href="image.css">
+    <script src='jquery-3.6.3.min.js'></script>
+    <script src='ajax.js'></script>
+</head>
+<body style="background: brown;margin: 0;">
+    <div id="prompt" class="box_fixed" style="display: none;"></div>
+    <div id="container">
+        <div id="id0" style="position: absolute; top: 0px; left: 0px; width: 400px;"></div>
+        <div id="id1" style="position: absolute; top: 0px; left: 400px; width: 400px;"></div>
+        <div id="id2" style="position: absolute; top: 0px; left: 800px; width: 400px;"></div>
+        <div id="id3" style="position: absolute; top: 0px; left: 1200px; width: 400px;"></div>
+    </div>
+    <script>
+        // 滾動監聽
+        window.addEventListener('scroll',(event) => {
+            console.log('滾動...');
+            checkScroll()
+        });
+    </script>
+</body>
+</html>

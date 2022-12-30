@@ -1,0 +1,59 @@
+.downloadButton {
+    position: relative;
+}
+    
+.copyTextButton {
+    position: relative;
+}
+
+.btnContainer {
+    position: absolute;
+    margin-top: 12;
+    margin-left: 12;
+}
+
+.greenCss {
+    background-color:#00bb10;
+    /* border-radius:33px; */
+    border-radius:5px;
+    border: none;
+    color:#fff;
+    cursor:pointer;
+    display:inline-block;
+    font-size:16px;
+    margin-right:12px;
+    overflow:hidden;
+    padding:12px 0;
+    text-align:center;
+    white-space:nowrap;
+    width:120px;
+}
+
+.greenCss:hover{
+    background-color:#6ccc63;
+}
+
+.greenCss:active{
+    background: #000000;   /* 黑色 */
+    opacity: 0.5;    /* 設置不透明度（可以不設置） */
+}
+
+.img {
+    border-radius: 10px;
+}
+
+.box_fixed {
+    width: 100%;
+    font-size:26px;
+    background: rgb(216, 216, 216);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#container {
+    position: relative;
+    margin-left: 160;
+    margin-top: 100;
+}
