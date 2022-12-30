@@ -1,9 +1,91 @@
-.downloadButton {
-    position: relative;
+.list {
+    display: flex;
+    justify-content: center;
 }
-    
-.copyTextButton {
+
+.product {
+    flex: none;
+    /* width: 384px; */
+    width: 24%;
+    margin: 8px;
+    /* background-color: #ffcccc; */
+}
+
+.img {
+    justify-content: center;
+    margin: 15;
+    border-radius: 10px;
+    /* width: 402px; */
+    width: -webkit-fill-available;
+}
+/* .img384 {
+    justify-content: center;
+    border-radius: 10px;
+    display: none;
+} */
+.box_fixed {
+    width: 100%;
+    font-size:30px;
+    background: rgb(216, 216, 216);
+    position: fixed;
+    left: 0;
+    /* top: 0; */
+    bottom: 0;
+    z-index: 1;
+}
+
+#container {
     position: relative;
+    /* margin-left: 160; */
+    /* margin-top: 100; */
+}
+
+@media (max-width:1600px) {
+    /* 螢幕寬度小於1600px時，套用這裡的css */
+    /* 顯示三張圖 */
+    #id3 {
+        display: none;
+    }
+    .list {
+        flex-wrap: wrap;
+    }
+    .product {
+        width: 32%;
+    }
+    /* .box_fixed {
+        font-size:44px;
+    } */
+    .img {
+        border-radius: 10px;
+        width: -webkit-fill-available;
+        /* width: 30%; */
+    }
+}
+@media (max-width:1232px) {
+    /* 螢幕寬度小於1232px時，套用這裡的css */
+    /* 顯示兩張圖 */
+    #id2 {
+        display: none;
+    }
+    .product {
+        width: 48%;
+    }
+    /* .box_fixed {
+        font-size:57px;
+    } */
+}
+@media (max-width:832px) {
+    /* 螢幕寬度小於832px時，套用這裡的css */
+    /* 顯示一張圖 */
+    #id1 {
+        display: none;
+    }
+    .product {
+        width: -webkit-fill-available;
+    }
+    .box_fixed {
+        font-size:15px;
+    }
 }
 
 .btnContainer {
@@ -14,7 +96,6 @@
 
 .greenCss {
     background-color:#00bb10;
-    /* border-radius:33px; */
     border-radius:5px;
     border: none;
     color:#fff;
@@ -34,27 +115,6 @@
 }
 
 .greenCss:active{
-    background: #000000;   /* 黑色 */
-    opacity: 0.5;    /* 設置不透明度（可以不設置） */
-}
-
-.img {
-    border-radius: 10px;
-}
-
-.box_fixed {
-    width: 100%;
-    /* font-size:26px; */
-    font-size:70px;
-    background: rgb(216, 216, 216);
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1;
-}
-
-#container {
-    position: relative;
-    margin-left: 160;
-    margin-top: 360;
+    background: #000000;
+    opacity: 0.5;
 }

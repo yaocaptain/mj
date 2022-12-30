@@ -1,18 +1,25 @@
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>midjourney</title>
     <link rel="stylesheet" href="image.css">
     <script src='jquery-3.6.3.min.js'></script>
     <script src='ajax.js'></script>
 </head>
-<body style="background: brown;margin: 0;">
+<!-- <body style="background: brown;margin: 0;"> -->
+<body style="background: #ffcccc;">
+<!-- <body> -->
     <div id="prompt" class="box_fixed" style="display: none;"></div>
-    <div id="container">
-        <div id="id0" style="position: absolute; top: 0px; left: 0px; width: 400px;"></div>
-        <div id="id1" style="position: absolute; top: 0px; left: 400px; width: 400px;"></div>
-        <div id="id2" style="position: absolute; top: 0px; left: 800px; width: 400px;"></div>
-        <div id="id3" style="position: absolute; top: 0px; left: 1200px; width: 400px;"></div>
+    <div id="container" class="list">
+        <!-- <div id="id0" class="product" style="position: absolute; top: 0px; left: 0px; width: 400px;">p1</div>
+        <div id="id1" class="product" style="position: absolute; top: 0px; left: 400px; width: 400px;">p2</div>
+        <div id="id2" class="product" style="position: absolute; top: 0px; left: 800px; width: 400px;">p3</div>
+        <div id="id3" class="product" style="position: absolute; top: 0px; left: 1200px; width: 400px;">p4</div> -->
+        <div id="id0" class="product"></div>
+        <div id="id1" class="product"></div>
+        <div id="id2" class="product"></div>
+        <div id="id3" class="product"></div>
     </div>
     <script>
         // 滾動監聽
