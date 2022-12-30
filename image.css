@@ -44,7 +44,8 @@
 
 .box_fixed {
     width: 100%;
-    font-size:26px;
+    /* font-size:26px; */
+    font-size:70px;
     background: rgb(216, 216, 216);
     position: fixed;
     left: 0;
@@ -55,5 +56,5 @@
 #container {
     position: relative;
     margin-left: 160;
-    margin-top: 100;
+    margin-top: 360;
 }

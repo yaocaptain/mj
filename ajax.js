@@ -116,6 +116,10 @@ function loadImages() {
             })
         };
 
+        let prompt = `${d[id[i]]['prompt']}`;
+        if (prompt.length > 250) {
+            prompt = prompt.slice(0, 250) + '...'  // 顯示字數上限250字
+        }
         btnContainer.onmouseover = function() {
             this.style.display = 'block';
             document.getElementById("prompt").innerHTML = prompt;
@@ -132,7 +136,6 @@ function loadImages() {
             document.getElementById("prompt").style.display = 'block';
         }
         let a1 = `over ${id[i]}`
-        let prompt = `${d[id[i]]['prompt']}`;
         img.onmouseover = function() {
             // console.log(a1);
             this.previousSibling.style.display = 'block';
